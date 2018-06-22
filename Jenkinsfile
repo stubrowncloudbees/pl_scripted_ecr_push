@@ -25,7 +25,8 @@ podTemplate(label: label,
             }
         }
         container("awscli") {
-            stage("awscli") {
+            stage("awscli")
+              sh 'ls'
               sh 'aws s3 help'
             }
         }
