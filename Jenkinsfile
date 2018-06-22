@@ -20,9 +20,6 @@ podTemplate(label: label,
 
                 }
             }
-            stage("push to ecr"){
-                sh "ls"
-            }
         }
         container("awscli") {
             stage("awscli"){
